@@ -43,6 +43,12 @@ footer .heading {
 
 /* ************** */
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 .demo-header {
     text-align: center;
     background: url('http://themes.startbootstrap.com/vitality-v1.3.6/assets/img/bg-header.jpg') no-repeat center center scroll;
@@ -53,3 +59,4 @@ footer .heading {
     -o-background-size: cover;
     padding: 100px 0;
 }
+
