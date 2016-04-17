@@ -180,3 +180,42 @@ hr {
     transition: all 0.5s ease 0s;
 }
 
+
+
+/* **************** */
+/*   dotted box
+/* **************** */
+
+.dotted-box {
+    background:#fff;
+    transition:all 0.2s ease;
+    border:2px dashed #dadada;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-clip: padding-box;
+    padding:0 20px 20px 20px;
+    min-height:340px;
+}
+
+.dotted-box:hover {
+    border:2px solid #525C7A;
+}
+
+.dotted-box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.dotted-box .box-content {
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+.dotted-box .box-content p {
+    color:#515c66;
+    text-transform:none;
+}
