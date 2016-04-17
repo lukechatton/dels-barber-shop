@@ -43,6 +43,17 @@ footer .heading {
 
 /* ************** */
 
+body {
+    background: #fafafa url('http://d85wutc1n854v.cloudfront.net/live/imgs/content_inner_bg.png');
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #404040;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
@@ -58,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     -o-background-size: cover;
     padding: 100px 0;
+    margin-bottom: 20px;
 }
 
 hr.colored {
