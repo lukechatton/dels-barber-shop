@@ -1,5 +1,17 @@
-   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+  
+ <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>
+ <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 44.540, lng: -78.546},
+          zoom: 8
+        });
+      }
+    </script>
+
+    
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -98,15 +110,6 @@
 
 </div>
 
- <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 44.540, lng: -78.546},
-          zoom: 8
-        });
-      }
-    </script>
      
 
 </body>
