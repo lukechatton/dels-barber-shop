@@ -5,7 +5,7 @@
 
 body {
     min-height:100%;
-    background: gray; /* For browsers that do not support gradients */
+    /*background: gray; !* For browsers that do not support gradients *!*/
     background: -webkit-radial-gradient(circle,  #848484 , #707070
     ); /* Safari */
     background: -o-radial-gradient(circle,  #848484 , #707070
