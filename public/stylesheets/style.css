@@ -77,6 +77,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
+.demo-header .btn-outline-light:hover, .btn-outline-light:focus {
+    color: #ef4035;
+    background: white;
+    outline: none;
+}
+
 hr.colored {
     border-color: #ef4035;
 }
