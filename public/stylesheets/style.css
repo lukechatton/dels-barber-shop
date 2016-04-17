@@ -132,7 +132,7 @@ hr {
 
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-.box {
+.box-bubble {
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 10px 25px;
@@ -140,7 +140,7 @@ hr {
     display: block;
     margin-top: 60px;
 }
-.box-icon {
+.box-bubble .box-icon {
     background-color: #57a544;
     border-radius: 50%;
     display: table;
@@ -149,18 +149,18 @@ hr {
     width: 100px;
     margin-top: -61px;
 }
-.box-icon span {
+.box-bubble .box-icon span {
     color: #fff;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-.info h4 {
+.box-bubble .info h4 {
     font-size: 26px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.info > p {
+.box-bubble .info > p {
     color: #717171;
     font-size: 16px;
     padding-top: 10px;
