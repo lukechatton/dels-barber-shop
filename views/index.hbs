@@ -67,10 +67,18 @@
 
             <div class="panel panel-primary"> 
               <div class="panel-heading"> 
-                <h3 class="panel-title">Panel title
+                <h3 class="panel-title">Location and Hours
+
+    <div id="map"></div>
+
+
                 </h3> 
               </div> 
-            <div class="panel-body"> Panel content </div> </div>
+            <div class="panel-body"> 
+            
+
+             </div> 
+           </div>
 
         </div>
         
@@ -87,3 +95,15 @@
     </div>
 
 </div>
+
+ <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 44.540, lng: -78.546},
+          zoom: 8
+        });
+      }
+    </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
