@@ -9,6 +9,10 @@ body {
     background-attachment: fixed;
 }
 
+.sport-font {
+    font-family: octin sports rg;
+}
+
 #logo{
     max-height: 100%;
     max-width: 100%;
