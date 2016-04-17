@@ -83,6 +83,30 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
 }
 
+.demo-header .btn {
+    border-radius: 0;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.demo-header .btn-outline-light {
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.demo-header .btn, .input-group-btn {
+    border-radius: 0 !important;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 hr.colored {
     border-color: #ef4035;
 }
