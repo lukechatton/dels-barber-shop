@@ -1,8 +1,28 @@
 
 
+<script>
+ facebookScale = function () {
+    var adjustWidth;
+    adjustWidth = $('.facebook-likebox').width() / 280;
+    return $('.fb-page').css({
+      '-webkit-transform': 'scale(' + adjustWidth + ')',
+      '-moz-transform': 'scale(' + adjustWidth + ')',
+      'transform': 'scale(' + adjustWidth + ')'
+    });
+  }
 
+$(function(){
+    $('.fb-page').on('resize DOMSubtreeModified', facebookScale);
+    $(window).on('resize', facebookScale);
+  })
+</script>
  <style>
 
+.fb-page{
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+}
   
 h4 h5{
 font-weight:bold;
