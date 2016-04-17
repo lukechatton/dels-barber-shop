@@ -27,8 +27,8 @@ body {
 }
 
 .navbar-nav li a {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 20px;
     font-wight: bold;
 }
