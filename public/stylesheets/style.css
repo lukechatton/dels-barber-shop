@@ -26,7 +26,9 @@ body {
     border-radius: 0px;
 }
 
-.navbar-nav li {
-    padding-top: 50%;
-    padding-bottom: 50%;
+.navbar-nav li a {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 20px;
+    font-wight: bold;
 }
