@@ -202,7 +202,7 @@ hr {
     border:2px solid #525C7A;
 }
 
-.dotted-box span.box-title {
+.dotted-box .box-title {
     color: #fff;
     font-size: 24px;
     font-weight: 300;
