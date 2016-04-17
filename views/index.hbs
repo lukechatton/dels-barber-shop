@@ -33,7 +33,34 @@ padding: 5px;
 }
 </style>
 
+ <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+ <script>
+    function initMap() {
+  var myLatLng = {lat: 33.1151217, lng: -117.0802894};
 
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Dels Barber Shop'
+  });
+}
+    </script>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/screen.css">
 
@@ -85,8 +112,24 @@ padding: 5px;
 
 
 
+<<<<<<< HEAD
              </div> 
            </div>
+=======
+        <!--</div>-->
+
+          <div class="col-md-4">
+              <div class="box">
+                  <div class="box-icon">
+                      <span class="fa fa-4x fa-map"></span>
+                  </div>
+                  <div class="info">
+                      <h4 class="text-center">Our Location</h4>
+                      <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.7701472756107!2d-117.08247808525135!3d33.115126173976634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf48214182e21%3A0xf5f941cfc608df65!2sDel&#39;s+Barber+Shop!5e0!3m2!1sen!2sus!4v1460870939567" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+>>>>>>> origin/master
 
         </div>
         
@@ -109,6 +152,8 @@ padding: 5px;
     </div>
 
     <hr />
+
+    
 
 <nav id="flip-page">
   <ul class="pagination">
