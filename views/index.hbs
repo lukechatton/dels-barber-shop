@@ -10,19 +10,21 @@
  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>
  <script>
-      $(function() {
-  var mapOptions = {
-    zoom: 8,
-    center: new google.maps.LatLng(-34.397, 150.644)
-  };
-  var map = new google.maps.Map($("#map-canvas")[0], mapOptions);
+    function initMap() {
+  var myLatLng = {lat: -25.363, lng: 131.044};
 
-  // listen for the window resize event & trigger Google Maps to update too
-  $(window).resize(function() {
-    // (the 'map' here is the result of the created 'var map = ...' above)
-    google.maps.event.trigger(map, "resize");
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
   });
-});
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+      
     </script>
 
 
