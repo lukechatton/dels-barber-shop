@@ -7,6 +7,16 @@ body {
     min-height:100%;
     background-size:100%;
     background-attachment: fixed;
+
+    background-color: #2A2E34;
+}
+
+footer {
+    background-color: #2A2E34;
+}
+
+#page-content {
+    background-color: #fff;
 }
 
 .sport-font {
@@ -21,9 +31,6 @@ body {
     padding-bottom: 0;
 }
 
-#body{
-    background-color:red;
-}
 
 /*.navbar {*/
     /*margin-bottom: 0px;*/
