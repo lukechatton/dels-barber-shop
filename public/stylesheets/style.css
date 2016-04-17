@@ -41,26 +41,15 @@ footer .heading {
     padding-bottom: 0;
 }
 
+/* ************** */
 
-/*.navbar {*/
-    /*margin-bottom: 0px;*/
-    /*border-radius: 0px;*/
-/*}*/
-
-/*.navbar-nav li a {*/
-    /*padding-top: 25px;*/
-    /*padding-bottom: 25px;*/
-    /*font-size: 20px;*/
-    /*font-wight: bold;*/
-/*}*/
-
-/*.navbar {*/
-    /*position: relative;*/
-    /*padding: 30px 15px;*/
-    /*text-align: center;*/
-    /*color: rgba(255, 255, 255, .8);*/
-    /*background-color: #b84d45;*/
-    /*background-image: url('http://sbootstrap.startbootstrapc.netdna-cdn.com/assets/img/bg.png');*/
-    /*margin-bottom: 40px;*/
-    /*font-size: 20px;*/
-/*}*/
+.demo-header {
+    text-align: center;
+    background: url('http://themes.startbootstrap.com/vitality-v1.3.6/assets/img/bg-header.jpg') no-repeat center center scroll;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 100px 0;
+}
