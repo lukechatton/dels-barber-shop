@@ -1,4 +1,4 @@
-  
+
  <style>
   #map {
     width: 500px;
@@ -16,6 +16,7 @@
           center: {lat: 44.540, lng: -78.546},
           zoom: 8
         });
+        google.maps.event.trigger(map, "resize");
       }
     </script>
 
