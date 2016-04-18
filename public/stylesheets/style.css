@@ -8,7 +8,8 @@ body {
     background-size:100%;
     background-attachment: fixed;
 
-    background-color: #2A2E34;
+    /*background-color: #2A2E34;*/
+    background-color: #3B3D42;
 }
 
 footer {
@@ -220,5 +221,5 @@ hr {
 }
 
 .part2 {
-    background-color: #3B3D42;
+
 }
