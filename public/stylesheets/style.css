@@ -4,12 +4,25 @@
 }
 
 body {
+
+}
+
+body {
     min-height:100%;
     background-size:100%;
     background-attachment: fixed;
 
     /*background-color: #2A2E34;*/
+
+
+    /*background: #fafafa url('http://d85wutc1n854v.cloudfront.net/live/imgs/content_inner_bg.png');*/
     background-color: #3B3D42;
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #404040;
 }
 
 footer {
@@ -26,10 +39,6 @@ footer .heading {
     color: #fff;
 }
 
-#page-content {
-    background-color: #fff;
-}
-
 .sport-font {
     font-family: octin sports rg;
 }
@@ -43,16 +52,6 @@ footer .heading {
 }
 
 /* ************** */
-
-body {
-    background: #fafafa url('http://d85wutc1n854v.cloudfront.net/live/imgs/content_inner_bg.png');
-    margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 18px;
-    color: #404040;
-}
 
 
 h1, h2, h3, h4, h5, h6 {
