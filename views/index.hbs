@@ -208,20 +208,22 @@ color:blue;
 
 
 
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 
     <footer style="background-color:white;height:110%">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-film wow bounceIn text-primary "  style="color:white"></i>
-                        <h3 style="color:white">History</h3>
-                        
-                    </div>
-                </div>
-            </div>
-          </div>
+<div class="fb-like" 
+    data-href="http://www.your-domain.com/your-page.html" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true">
+  </div>
     </footer>
     
     
