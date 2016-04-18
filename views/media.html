@@ -6,6 +6,63 @@
 <head>
 
 
+    <style>
+
+    .col-xs-1:hover {
+    border: 1px solid; /* replace with whatever color you want */
+ box-shadow: 0 0 10px #07c;
+}
+    html, body {
+      height:100%;
+
+    }
+    
+    #picture {
+width:100px;       max-height:100%;
+
+    }
+
+    .sidebar{
+        height:25%;
+   }
+
+   .col-xs-1 {
+
+         height:120%;
+            border-radius: 10px;
+            float:left;
+            overflow:visible;
+            position:absolute;
+            margin-right: -1000px;
+
+
+
+   }
+
+   #first{
+    background-color:#D7D7D7;
+    z-index:3;
+   }
+
+   #second{
+   background-color: #C7C7CC;
+
+    z-index:2;
+
+
+   }
+
+   #third{
+    background-color: #8E8E93;
+
+    z-index:1;
+
+
+   }
+
+    </style>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -31,19 +88,7 @@
     
     body {
     min-height:100%;
-     background: gray; /* For browsers that do not support gradients */
-     background: -webkit-radial-gradient(circle,  #848484 , #707070
-  ); /* Safari */
-     background: -o-radial-gradient(circle,  #848484 , #707070
-  ); /* Opera 11.6 to 12.0 */
-     background: -moz-radial-gradient(circle,  #848484 , #707070
-  ); /* Firefox 3.6 to 15 */
-     background: radial-gradient(circle,  #848484 , #707070
-); /* Standard syntax */
-    /*background: -webkit-repeating-linear-gradient(-45deg,white,blue 10%,red 20%); /* For Safari 5.1 to 6.0 */
-    /*background: -o-repeating-linear-gradient(-45deg,white,blue 10%,red 20%); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-repeating-linear-gradient(-45deg,white,blue 10%,red 20%); /* For Firefox 3.6 to 15 */
-    /*background: repeating-linear-gradient(-45deg,white,blue 10%,red 20%); /* Standard syntax (must be last) */
+  
     background-size:100%;
     background-attachment: fixed;
     }
@@ -98,28 +143,12 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>  
+<div class="container-fluid">
+<div class="row">
+ <div class="col-md-8 col-md-offset-2">
 
-<nav>
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#"><strong>Pictures</strong></a></li>
-    <li><a href="#"><strong>Videos</strong></a></li>
-    <li><a href="#"><strong>News</strong></a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-
-
-
-</body>
+</div>
+</div>
+</div>
 
 </html>
