@@ -24,8 +24,9 @@ body {
 }
 
 #history-container {
+    border-top: 1px solid #ccc;
     margin-top: 20px;
-    background-color:#ebf2fa;
+    background-color:#fff;
 }
 
 footer {
