@@ -12,8 +12,7 @@ body {
     background-size:100%;
     background-attachment: fixed;
 
-    background-image: url(/images/cheap_diagonal_fabric.png);
-    background-repeat: repeat-y;
+    background: url('/images/cheap_diagonal_fabric.png') repeat;
 
     background-color: #3B3D42;
     margin: 0;
