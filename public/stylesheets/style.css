@@ -27,6 +27,10 @@ body {
     padding-bottom: 30px;
 }
 
+#history-container {
+    background-color:#70718e;
+}
+
 footer {
     background-color: #2A2E34;
 }
