@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
 
     background-image: url(/images/weather.png);
-    background-repeat: repeat;
+    background-repeat: repeat-y;
 
     background-color: #3B3D42;
     margin: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 #history-container {
-    background-color:#70718e;
+    /*background-color:#70718e;*/
 }
 
 footer {
