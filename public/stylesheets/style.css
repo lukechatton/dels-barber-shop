@@ -27,7 +27,8 @@ body {
 }
 
 #history-container {
-    /*background-color:#70718e;*/
+    margin-top: 20px;
+    background-color:#70718e;
 }
 
 footer {
