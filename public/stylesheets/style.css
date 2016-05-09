@@ -12,7 +12,7 @@ body {
     background-size:100%;
     background-attachment: fixed;
 
-    background-image: url("/images/weather.png");
+    background-image: url("../images/weather.png");
     background-repeat: repeat;
 
     background-color: #3B3D42;
