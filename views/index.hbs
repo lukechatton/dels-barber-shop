@@ -105,27 +105,39 @@ color:blue;
         </div>
     </div>
 </div>
-
 <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align:center">Scott Weston (struaxw@gmail.com)</h4>
       </div>
-      
+      <div class="modal-body">
+        <label></label>
+        <form>
+          <fieldset class="form-group">
+            <label for="client-email">Enter Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="client-email">Re-enter Your Email</label>
+            <input type="email" class="form-control" id="email2" placeholder="Enter email">
+        </fieldset>
+         <fieldset class="form-group">
+            <label for="exampleTextarea">Comment</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter comment—Limit 500 characters" maxlength="500"></textarea>
+        </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="submit" type="button" class="btn btn-primary" onclick="pipeIt(this.id)">Submit</button>
+        <div id="error" style="color:red"></div>
+      </div>
     </div>
   </div>
+</div>
 
 <div class="part2">
     <div class="container">
@@ -192,7 +204,7 @@ color:blue;
         <div class="flexslider">
           <ul class="slides">
             <li>
-             <a data-toggle="modal" href="#myModal"><img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger"/></a>
+             <a data-toggle="modal" data-target="#myModal"><img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger"/></a>
             </li>
             <li>
               <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" />
