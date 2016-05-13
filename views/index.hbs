@@ -187,34 +187,21 @@ color:blue;
 Launch demo modal
 </button>
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="text-align:center">Scott Weston (struaxw@gmail.com)</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        <label></label>
-        <form>
-          <fieldset class="form-group">
-            <label for="client-email">Enter Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-        </fieldset>
-        <fieldset class="form-group">
-            <label for="client-email">Re-enter Your Email</label>
-            <input type="email" class="form-control" id="email2" placeholder="Enter email">
-        </fieldset>
-         <fieldset class="form-group">
-            <label for="exampleTextarea">Comment</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter comment—Limit 500 characters" maxlength="500"></textarea>
-        </fieldset>
-        </form>
+        ...
       </div>
       <div class="modal-footer">
-        <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button id="submit" type="button" class="btn btn-primary" onclick="pipeIt(this.id)">Submit</button>
-        <div id="error" style="color:red"></div>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
