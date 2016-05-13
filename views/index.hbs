@@ -2,7 +2,23 @@
 
 
 
+<script>
 
+$(document).ready(function () {
+$("#button1").click(function () {
+    alert("hi");
+    $('#newscool').hide();
+    $('#cool').fadeIn('slow');
+});
+
+$('#news').click(function () {
+    $('#cool').hide();
+    $('#newscool').fadeIn('slow');
+
+});
+
+
+</script>
 <style>
 
 #email: hover {
@@ -61,8 +77,6 @@ color:blue;
             title: 'Dels Barber Shop'
         });
     }
-
-    
 </script>
 
 <div id="fb-root"></div>
@@ -100,7 +114,7 @@ color:blue;
                     <div class="box-icon">
                         <span class="fa fa-4x fa-map"></span>
                     </div>
-                    <div class="info" id="col_1">
+                    <div class="info">
                         <h4 class="text-center">Our Location</h4>
                         <div class="map-responsive">
                             <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.7701472756107!2d-117.08247808525135!3d33.115126173976634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf48214182e21%3A0xf5f941cfc608df65!2sDel&#39;s+Barber+Shop!5e0!3m2!1sen!2sus!4v1460870939567" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -113,13 +127,13 @@ color:blue;
                     <div class="box-icon">
                         <span class="fa fa-4x fa-hourglass-half"></span>
                     </div>
-                    <div class="info" id="col_2">
+                    <div class="info">
                         <h4 class="text-center">Hours and Contact</h4>
                         <h5 class="text-center">Tuesday-Saturday</h5>
                         <h5 class="text-center">8:00 AM to 5:30 PM</h5>
                         <hr />
 
-                        <h5 class="text-center">Phone:<a href="tel:760-743-9770" id="phone"> 760-743-9770</a></h5>
+                        <h5 class="text-center">Phone:<a href="tel:760-743-9770" id="phone"> 760-743-9770</a></h5>                      
                         <h5 class="text-center">E-Mail: <a href="mailto:Del@delsbarbershop.com" id="email">Del@delsbarbershop.com</a></h5>
                     </div>
                 </div>
@@ -131,7 +145,7 @@ color:blue;
  <div id="history-container">
     <div class="container">
         <div class="row">
-            <div class="well" style="margin-top: 20px">
+            <div class="box-bubble" >
                 <div class="info">
                     <h4 class="text-center">History</h4>
 
@@ -152,29 +166,7 @@ color:blue;
         </div>
     </div>
  </div>
-<div class="container-fluid">
- <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="flexslider">
-    <ul class="slides">
-    <li>
-      <img src="slide1.jpg" />
-    </li>
-    <li>
-      <img src="slide2.jpg" />
-    </li>
-    <li>
-      <img src="slide3.jpg" />
-    </li>
-    <li>
-      <img src="slide4.jpg" />
-    </li>
-    <!-- items mirrored twice, total of 12 -->
-  </ul>
-</div>
-    </div>
-</div>
-</div>
+
 
 
 <div id="fb-root"></div>
@@ -185,28 +177,9 @@ color:blue;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<script>
-      var $col_1 = $("#col_1"); 
-     var $col_2 = $("#col_2");
-     $(document).ready(function(){
-        var col1 = $col_1;
-        var col2 = $col_2;
-        var height = 0;
-
-        if(col1.height() >= col2.height()){
-            height=col1.height();
-            col2.css("min-height", height + "px")
-        }else{
-            height=col2.height();
-            col1.css("min-height", height + "px")
-    }
 
 
-});
-</script>
-
-
-<footer>
+<footer style="background-color:white;height:110%">
     <div class="row">
         <div class="col-md-2">
             <div class="fb-like" style="padding:10px" data-href="https://www.facebook.com/Dels-Barber-Shop-272884371376/?fref=ts" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
