@@ -13,8 +13,8 @@
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
- <!-- Latest compiled and minified JavaScript -->
-     <!-- Latest compiled and minified JavaScript -->
+
+        <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
@@ -23,41 +23,25 @@
 
         <link rel='stylesheet' href='/stylesheets/style.css' />
 
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   
 
-
-           
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/flexslider.css" type="text/css">
-
-<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.js"></script>  
-
+<!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="http://flexslider.woothemes.com/css/flexslider.css" />        
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>    
+<script src="http://flexslider.woothemes.com/js/jquery.flexslider.js"></script>        
 <script type="text/javascript" charset="utf-8">
 
-         // The slider being synced must be initialized first
-  $('#main-slider').flexslider({
-      animation: "slide",
-  });
-
-  $('#reviews-slider').flexslider({
-      animation: "slide",
-      itemWidth: 200,
-      itemMargin: 1,
-      minItems: 3,
-      maxItems: 9,
-      move: 0,
-  });
+        $(document).on('pageshow', function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 210,
+            itemMargin: 5
+    
+          });
+        });
 </script>
-<style>
-#page {
-    max-width: 500px;
-    padding: 1em;
-}
-
-
-</style>
 
     </head>
     <body>
