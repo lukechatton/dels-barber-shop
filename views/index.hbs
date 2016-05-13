@@ -76,16 +76,11 @@ color:blue;
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
- <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-  <!-- Demo CSS -->
-    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
-
-  <!-- FlexSlider -->
-  <!-- interseting use of defer, whcih means it wont' start until the page has loaded!!-->
-  <script defer src="jquery.flexslider-min.js"></script>
-
+<!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+<!-- Place in the <head>, after the three links -->
 <script type="text/javascript" charset="utf-8">
 
 $(window).load(function() {
@@ -180,7 +175,7 @@ $(window).load(function() {
         <div class="flexslider">
             <ul class="slides">
              <li>
-                <img src="http://roccityrobotix.org/wp-content/uploads/2015/04/DSC_6964HighlightsReduced_Resized1920x1280UMask.jpg" />
+                <img src="slide1.jpg" />
             </li>
             <li>
                 <img src="slide2.jpg" />
