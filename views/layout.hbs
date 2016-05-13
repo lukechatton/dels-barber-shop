@@ -27,29 +27,32 @@
 
 <!-- Place somewhere in the <head> of your document -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">    </script>
 <script src="js/jquery.flexslider.js"> </script>    
 
 <script type="text/javascript" charset="utf-8">
 
-        $('#carousel').flexslider({
-                  animation: "slide",
-                  controlNav: false,
-                  animationLoop: false,
-                  slideshow: false,
-                  itemWidth: 210,
-                  itemMargin: 5,
-                  asNavFor: "#slider"
-            });
+         // The slider being synced must be initialized first
+  $('#main-slider').flexslider({
+      animation: "slide",
+  });
 
-            $('#slider').flexslider({
-                animation: "slide",
-                controlNav: false,
-                animationLoop: false,
-                slideshow: false,
-                sync: "#carousel"
-            });
+  $('#reviews-slider').flexslider({
+      animation: "slide",
+      itemWidth: 200,
+      itemMargin: 1,
+      minItems: 3,
+      maxItems: 9,
+      move: 0,
+  });
 </script>
+<style>
+#page {
+    max-width: 500px;
+    padding: 1em;
+}
+
+
+</style>
 
     </head>
     <body>
