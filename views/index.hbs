@@ -171,7 +171,7 @@ color:blue;
         <div class="flexslider">
           <ul class="slides">
             <li>
-              <a data-toggle="modal" href="#myModal"><img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" /></a>
+             <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger"/>
             </li>
             <li>
               <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" />
@@ -199,6 +199,15 @@ color:blue;
 
 
 <div id="fb-root"></div>
+
+<script>
+$(document).ready(function(){
+    $("#modal_trigger").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
