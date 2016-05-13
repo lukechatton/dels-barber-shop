@@ -4,9 +4,7 @@
 
 
 <style>
-.flexslider .slides > li{
-    display:block;
-}
+
 #email: hover {
 text-decoration: underline;
 color:blue;
@@ -48,7 +46,6 @@ color:blue;
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>
-
 <script>
     function initMap() {
         var myLatLng = {lat: 33.1151217, lng: -117.0802894};
@@ -77,7 +74,6 @@ color:blue;
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
-
 
 <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/screen.css">
 
@@ -159,58 +155,23 @@ color:blue;
 <div class="container-fluid">
  <div class="row">
     <div class="col-md-10 col-md-offset-1">
-          <div id="page">
-    <div id="main-slider" class="flexslider">
-        <ul class="slides">
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg"
-                />
-            </li>
-        </ul>
-    </div>
-    <div id="reviews-slider" class="flexslider">
-        <ul class="slides">
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg"
-                />
-            </li>
-            <li>
-                <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg"
-                />
-            </li>
-        </ul>
-    </div>
+        <div class="flexslider">
+    <ul class="slides">
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+    <li>
+      <img src="slide4.jpg" />
+    </li>
+    <!-- items mirrored twice, total of 12 -->
+  </ul>
 </div>
-
-  
-
-
-
-</html>
     </div>
 </div>
 </div>
