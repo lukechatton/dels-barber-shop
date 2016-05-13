@@ -46,6 +46,7 @@ color:blue;
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>
+
 <script>
     function initMap() {
         var myLatLng = {lat: 33.1151217, lng: -117.0802894};
@@ -75,6 +76,20 @@ color:blue;
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
+<!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="jquery.flexslider.js"></script>
+<script>
+
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5
+  });
+});
+</script>
 <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/screen.css">
 
 <div class="demo-header">
@@ -152,7 +167,29 @@ color:blue;
         </div>
     </div>
  </div>
-
+<div class="container-fluid">
+ <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="flexslider">
+            <ul class="slides">
+             <li>
+                <img src="slide1.jpg" />
+            </li>
+            <li>
+                <img src="slide2.jpg" />
+            </li>
+            <li>
+                <img src="slide3.jpg" />
+            </li>
+            <li>
+                <img src="slide4.jpg" />
+            </li>
+    <!-- items mirrored twice, total of 12 -->
+            </ul>
+</div>
+    </div>
+</div>
+</div>
 
 
 <div id="fb-root"></div>
