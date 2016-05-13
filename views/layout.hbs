@@ -6,6 +6,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="js/jquery.flexslider.js"></script>
+<!-- Place in the <head>, after the three links -->
+        <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+    
+          });
+        });
+        </script>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -22,24 +35,7 @@
 
         <link rel='stylesheet' href='/stylesheets/style.css' />
 
-        <!-- Place somewhere in the <head> of your document -->
-<link rel="stylesheet" href="css/flexslider.css" type="text/css">
-<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
-<script src="js/jquery.flexslider.js"></script>
-<!-- Place in the <head>, after the three links -->
-      <script type="text/javascript">
-   (function($) {
-      $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-   })(jQuery);
-
-</script>
+    
 
 
     </head>
