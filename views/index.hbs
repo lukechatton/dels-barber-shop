@@ -66,9 +66,12 @@ color:blue;
         async defer></script>
 
 <script>
+var $activate = $("#")
 $(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal().align();
+    $(".modal_trigger").click(function(){
+        $("#myModal").modal({
+
+        });
     });
 });
 </script>
@@ -182,13 +185,13 @@ $(document).ready(function(){
         <div class="flexslider">
           <ul class="slides">
             <li>
-             <a data-toggle="modal" href="#myModal"><img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger"/></a>
+             <!--<a id="activation" data-toggle="modal" href="#myModal">--><img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger"/><!--</a>-->
             </li>
             <li>
-              <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" />
+              <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger" />
             </li>
             <li>
-              <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" />
+              <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" class="modal_trigger" />
             </li>
           </ul>
         </div>
