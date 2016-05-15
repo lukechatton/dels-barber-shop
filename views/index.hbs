@@ -64,6 +64,14 @@ color:blue;
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal().align();
+    });
+});
+</script>
 <script>
     function initMap() {
         var myLatLng = {lat: 33.1151217, lng: -117.0802894};
