@@ -215,16 +215,12 @@ $(document).ready(function(){
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <script>
-$(document).ready(function(){
 
         var $col_1 = $("#location")
         var $col_2 = $("#hours")
 
-
-        var submit_flag = null; 
-
         $(window).load(function(){
-          var col1 = $col_1;
+          var col1 = $col_1; alert("hi");
           var col2 = $col_2; 
 
           if(col1.height() >= col2.height()){
@@ -236,7 +232,6 @@ $(document).ready(function(){
             
             height=col2.height()
             col1.css("min-height", height + "px");
-            col3.css("min-height", height + "px");
 
           }
 
