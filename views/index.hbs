@@ -68,7 +68,11 @@ color:blue;
 <script>
 $(document).ready(function(){
     $(".modal_trigger").click(function(){
-        $("#myModal").modal({show: true});
+        var src = $(this).attr("src");
+        alert(src);
+        $("#myModal").modal({
+            show: true
+        });
     });
 });
 </script>
@@ -231,7 +235,7 @@ $(document).ready(function(){
     <div class="modal-content">
      
       <div class="modal-body">
-        <img src="http://cache.lego.com/r/catalogs/-/media/catalogs/videos/disney%20princess/2015/mini%20movies/picture_perfect1488x842.jpg?l.r2=-477756477" style="max-width:100%; max-height:100%"/>
+        <img id="display_image" src="*" style="max-width:100%; max-height:100%"/>
       </div>
     </div>
   </div>
