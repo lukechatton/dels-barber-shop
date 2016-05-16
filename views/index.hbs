@@ -2,23 +2,6 @@
 
 
 
-<script>
-
-$(document).ready(function () {
-$("#button1").click(function () {
-    alert("hi");
-    $('#newscool').hide();
-    $('#cool').fadeIn('slow');
-});
-
-$('#news').click(function () {
-    $('#cool').hide();
-    $('#newscool').fadeIn('slow');
-
-});
-
-
-</script>
 <style>
 
 .modal_trigger {
@@ -68,16 +51,12 @@ color:blue;
         async defer></script>
 
 <script>
-var $activate = $("#")
 $(document).ready(function(){
     $(".modal_trigger").click(function(){
-        $("#myModal").on('show.bs.modal', function () {
-       $(this).find('.modal-body').css({
-              width:'auto', //probably not needed
-              height:'auto', //probably not needed 
-              'max-height':'100%'
-            });
+        $('#myModal').modal({
+            show:true;
         });
+
     });
 });
 </script>
