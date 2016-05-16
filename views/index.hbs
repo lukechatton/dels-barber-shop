@@ -47,7 +47,7 @@ color:blue;
         padding-bottom:56.25%;
         position:relative;
         height:0;
-       
+
     }
     .map-responsive iframe{
         left:0;
@@ -55,6 +55,20 @@ color:blue;
         height:100%;
         width:100%;
         position:absolute;
+    }
+
+    html, body {
+        height:100%;
+    }
+
+    .container_one {
+        min-height:100%;
+        overflow:hidden;
+    }
+
+    #location, #hours {
+        margin-bottom:-9999px;
+        padding-bottom:9999px;
     }
 </style>
 
@@ -114,7 +128,7 @@ $(document).ready(function(){
 
 
 <div class="part2">
-    <div class="container">
+    <div class="container" id="container_one">
         <div class="row" id="equal_row">
             <div class="col-md-6" >
                 <div class="box-bubble">
