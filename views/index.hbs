@@ -220,11 +220,11 @@ $(document).ready(function(){
         var $col_2 = $("#hours")
 
         $(window).load(function(){
-          var col1 = $col_1; alert(col1.height());
-          var col2 = $col_2; alert(col2.height());
+          var col1 = $col_1;
+          var col2 = $col_2; 
 
           if(col1.height() >= col2.height()){
-            
+            alert("i");
             height=col1.height();
             col2.css("min-height", height + "px");
 
