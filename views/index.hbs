@@ -105,8 +105,8 @@ $(document).ready(function(){
 <div class="part2">
     <div class="container">
         <div class="row">
-            <div class="col-md-6" id="location">
-                <div class="box-bubble">
+            <div class="col-md-6" >
+                <div class="box-bubble" id="location">
                     <div class="box-icon">
                         <span class="fa fa-4x fa-map"></span>
                     </div>
@@ -118,9 +118,9 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" id="hours">
-                <div class="box-bubble">
-                    <div class="box-icon">
+            <div class="col-md-6" >
+                <div class="box-bubble" id="hours">
+                    <div class="box-icon" >
                         <span class="fa fa-4x fa-hourglass-half"></span>
                     </div>
                     <div class="info">
@@ -226,12 +226,12 @@ $(document).ready(function(){
           if(col1.height() >= col2.height()){
             alert("i");
             height=col1.height();
-            col2.css("height", height + "px");
+            col2.css("min-height", height + "px");
 
           }else if(col2.height() >= col1.height()){
             
             height=col2.height()
-            col1.css("height", height + "px");
+            col1.css("min-height", height + "px");
 
           }
 
