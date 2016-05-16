@@ -69,7 +69,7 @@ color:blue;
 $(document).ready(function(){
     $(".modal_trigger").click(function(){
         var src = $(this).attr("src");
-        alert(src);
+        $("#display_image").attr("src", src);
         $("#myModal").modal({
             show: true
         });
