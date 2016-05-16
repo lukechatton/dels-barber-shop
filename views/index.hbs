@@ -226,10 +226,11 @@ $(document).ready(function(){
           var row = $row; 
 
           if(col1.height() >= col2.height()){
-            alert("i");
             height=col1.height();
-            row.css("min-height", height + "px");
-            col2.css("min-height", "100%")
+            row.css("max-height", height + "px");
+            col2.css("min-height", "100%");
+                        alert("i");
+
 
           }else if(col2.height() >= col1.height()){
             
