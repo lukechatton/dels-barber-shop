@@ -4,6 +4,18 @@
 
 <style>
 /*comment*/
+
+.modal-dialog {
+max-width:90%;
+max-height:90%;
+margin:0 auto;
+    top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
 footer {
         background: url('/images/seamless_paper_texture.png') repeat;
 }
@@ -277,7 +289,7 @@ $(document).ready(function(){
 
 <!-- Modal -->
 <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document" style="max-width:90%;max-height:90%;margin:0 auto;">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
      
       <div class="modal-body" style="text-align:center">
