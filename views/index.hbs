@@ -331,12 +331,13 @@ $(document).ready(function(){
             }
 
 
-           alert(height);
+            console.log('height is now '+ height);
         });
 
         $holder.css('min-height', height);
         }
 
+        alert(height);
         $(window).on('resize',resize_boxes());
 
     
