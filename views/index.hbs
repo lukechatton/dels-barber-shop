@@ -164,7 +164,7 @@ $(document).ready(function(){
                     </div>
                     <div class="info">
                         <h4 class="text-center">Our Location</h4>
-                        <div class="map-responsive" id="location">
+                        <div class="map-responsive" id="location" class="holder">
                             <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.7701472756107!2d-117.08247808525135!3d33.115126173976634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf48214182e21%3A0xf5f941cfc608df65!2sDel&#39;s+Barber+Shop!5e0!3m2!1sen!2sus!4v1460870939567" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ $(document).ready(function(){
                     <div class="box-icon" >
                         <span class="fa fa-4x fa-hourglass-half"></span>
                     </div>
-                    <div class="info" id="hours">
+                    <div class="info" id="hours" class='Holder'>
                         <h4 class="text-center">Hours and Contact</h4>
                         <h5 class="text-center">Tuesday-Saturday</h5>
                         <h5 class="text-center">8:00 AM to 5:30 PM</h5>
@@ -316,26 +316,34 @@ $(document).ready(function(){
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!--<script>
+<script>
 
-        var $col_1 = $("#location")
-        var $col_2 = $("#hours")
-
-        $(document).ready(function(){
-          var col1 = $col_1; alert(col1.height());
-          var col2 = $col_2; alert(col2.height());
-
-        if(col1.height() >= col2.height()){
-            height=col1.height();
-            col2.css("min-height", height + "px");
-             alert("i");
+        $(window).load(function() {
+       
+        var $holder = $(".holder");
 
 
-          }
+        function resize_boxes() {
+           $.each($holder, function(key, value) {
+            var this_height = $(this).height();
+            if (this_height > height) {
+              height = this_height;
+            }
 
+
+            console.log('height is now '+ height);
         });
 
-</script>-->
+        $holder.css('min-height', height);
+        }
+
+        $(window).on('resize',resize_boxes());
+
+    
+        });
+     
+
+</script>
 
 
 <footer class="container-fluid" style="background-color:white;margin-top:50px">
