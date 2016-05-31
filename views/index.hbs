@@ -21,10 +21,14 @@ margin:0 auto;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 }*/
+.modal-backdrop{
 
+    position:none !important;
+}
 
 .modal {
     display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
@@ -41,7 +45,7 @@ transform: translate(-50%, -50%);
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 /* Caption of Modal Image */
