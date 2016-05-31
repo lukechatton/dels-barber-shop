@@ -421,11 +421,12 @@ $(document).ready(function(){
     $(".modal_trigger").click(function(){
         var src = $(this).attr("src");
         $("#display_image").attr("src", src);
-        $myModal.modal({
+        $("#myModal").modal({
             show: true
         });
     });
     $("#close").click(function(){
+        alert("nice try");
         $myModal.css("display", "none");
         
     });
