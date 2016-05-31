@@ -11,11 +11,6 @@ background-color:#191919;
 
 
 }*/
-
-img {
-
-    display:none;
-}
 .modal-dialog {
 max-width:90%;
 max-height:90%;
@@ -345,7 +340,7 @@ function centerModal() {
     $dialog.css("margin-top", offset);
 }
 
-$('.modal').on('show.bs.modal', centerModal);
+$('.modal').on('shown.bs.modal', centerModal);
 $(window).on("resize", function () {
     $('.modal:visible').each(centerModal);
 });
