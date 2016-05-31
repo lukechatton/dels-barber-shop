@@ -329,24 +329,21 @@ $(document).ready(function(){
         resize_boxes();
         $(window).on('resize',resize_boxes());
 
-    
-        });
-
-function centerModal() {
+    function centerModal() {
     $(this).css('display', 'block');
     var $dialog = $(this).find(".modal");
     var offset = ($(window).height() - $dialog.height()) / 2;
-    alert($dialog);
-    alert($(window).height());
-    alert(offset);
     // Center modal vertically in window
-    $dialog.css("margin-top", 30000+"px");
+    $dialog.css("margin-top", offset);
 }
 
 $('.modal').on('shown.bs.modal', centerModal);
 $(window).on("resize", function () {
     $('.modal:visible').each(centerModal);
 });
+        });
+
+
      
 
 </script>
