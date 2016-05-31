@@ -89,7 +89,15 @@ color:blue;
         async defer></script>
 
 <script>
-
+$(document).ready(function(){
+    $(".modal_trigger").click(function(){
+        var src = $(this).attr("src");
+        $("#display_image").attr("src", src);
+        $("#myModal").modal({
+            show: true
+        });
+    });
+});
 </script>
 <script>
     function initMap() {
@@ -324,15 +332,6 @@ color:blue;
     
         });
 
-$(document).ready(function(){
-    $(".modal_trigger").click(function(){
-        var src = $(this).attr("src");
-        $("#display_image").attr("src", src);
-        $("#myModal").modal({
-            show: true
-        });
-    });
-});
             function centerModal() {
                 $(this).css('display', 'block');
                 var $dialog = $(this).find(".modal");
