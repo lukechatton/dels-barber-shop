@@ -5,7 +5,7 @@
 <style>
 /*comment*/
 
-.modal {
+/*.modal {
 
       padding: 0!important;
 
@@ -25,6 +25,25 @@ margin:0 auto;
 -moz-transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
+}*/
+.modal {
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
 }
 footer {
         background: url('/images/seamless_paper_texture.png') repeat;
@@ -286,12 +305,16 @@ $(document).ready(function(){
 
 <!-- Modal -->
 <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="vertical-alignment-helper">
+
+
+  <div class="modal-dialog vertical-align-center" role="document">
     <div class="modal-content">
      
       <div class="modal-body" style="text-align:center">
         <img id="display_image" src="*" style="max-width:100%;max-height:100%"/>
       </div>
+  </div>
     </div>
   </div>
 </div>
