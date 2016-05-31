@@ -5,8 +5,18 @@
 <style>
 /*comment*/
 
-.modal-backdrop{
-    opacity:0.9;
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
 .modal-content {
 background-color:#191919;
